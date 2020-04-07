@@ -1,72 +1,95 @@
-# Next.js redux starter
-An opinionated Next.js starter kit with Express, Redux, styled-components, and react-testing-library.
+# React.js Test Task: Library
 
-[![Build Status](https://travis-ci.org/CodementorIO/nextjs-redux-starter.svg?branch=master)](https://travis-ci.org/CodementorIO/nextjs-redux-starter)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Greenkeeper badge](https://badges.greenkeeper.io/CodementorIO/nextjs-redux-starter.svg)](https://greenkeeper.io/)
+Write a library of books and magazines using React.
 
-## About
-Next.js is an awesome and minimalistic framework to make a modern universal react app. However, there're times that we need a bit more features to build a complex SPA. That's why this project is born.
+## Topic
 
-## Features
-- ▲ Based on latest [Next.js](https://github.com/zeit/next.js)
-- 🚄 Dynamic routing with [express](https://github.com/expressjs/express) and [next-routes](https://github.com/fridays/next-routes).
-- 🗄  State management with [redux](https://github.com/reactjs/redux), [react-redux](https://github.com/reactjs/react-redux), and [next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper)
-- 💅 Styling with [styled-components](https://github.com/styled-components/styled-components)
-- 🐐 Unit testing with [react-testing-library](https://github.com/testing-library/react-testing-library)
-- 🛀 Linting staged changes on [pre-commit](https://github.com/pre-commit/pre-commit) with [standard](https://github.com/standard/standard)
-- ⛑ [react-helmet](https://github.com/nfl/react-helmet), [Immutable.js
-](https://github.com/facebook/immutable-js/), [dotenv](https://github.com/motdotla/dotenv), and more...
+You have to implement an abstracted and simple library system.
 
-## Getting started
-```
-git clone https://github.com/CodementorIO/nextjs-redux-starter my-project
-cd my-project
+## Frame conditions
+
+1. This is a real world situation. You are allowed to consult the Internet, use every library you want, call a friend ...
+
+   **BUT:** You are not allowed to do [pair programming](https://en.wikipedia.org/wiki/Pair_programming).
+
+2. Develop your code based on React.js version 16, Redux version 4 and NEXT.js version 9.
+
+   You do not need to use Semantic-UI, the layout, tests or routing provided.
+   You can rename, refactor, remove or delete them as you with.
+   They were created to provide a minimum structure so you can focus on what you think it is important to finish the tasks requested.
+
+3. Keep the following priorities in mind while you implementing - in the mentioned order:
+   1. Code quality
+   2. Usage of object oriented methods
+   3. Functionality
+
+4. Given resources:
+
+   > **Hint:** There is a reason why there are so many books and authors in german with [umlauts](https://en.wikipedia.org/wiki/Germanic_umlaut).
+
+   * [`authors.csv`](data/authors.csv): Contains authors with its `email`, `firstName` and `lastName`.
+   * [`books.csv`](data/books.csv): Contains books with its `title`, `description`, one or more `authors` and an `isbn`.
+   * [`magazines.csv`](data/magazines.csv): Contains magazines with its `title`, one or more `authors`, a `publishedAt` and an `isbn`.
+
+## Tasks
+
+* [Main tasks](#main-tasks)
+* [Optional tasks](#optional-tasks)
+
+### Main tasks
+
+1. Your software should read all data from the given CSV files in a meaningful structure.
+
+2. Print out all books and magazines with all their details (with a meaningful output format).
+
+   > **Hint**: Do not call `printBooks(...)` first and then `printMagazines(...)` ;-)
+
+3. Find a book or magazine by its `isbn`.
+
+4. Find all books and magazines by their `authors`’ email.
+
+5. Print out all books and magazines with all their details sorted by `title`.
+   This sort should be done for books and magazines together.
+
+### Optional tasks
+
+> **Hint:** Optional means optional.
+
+1. Write Unit tests for one or more methods.
+
+2. Implement a view for direct path access for each ISBN and link then to the search results.
+
+3. Add a book and a magazine to the data structure of your software and export it to a new CSV files.
+
+## Procedure
+
+1. Get the code. It should be provided to you by the persons leading the interview.
+
+2. Open in your favorite IDE.
+
+3. Prepare a solution.
+
+## FAQ
+
+##### How to install the application?
+
+```bash
 yarn install
+```
+
+##### How to run your application?
+
+```bash
 yarn start
 ```
 
-Then open `http://localhost:3100/` to see your app.
+##### How to run your tests?
 
-### Deployment
-After `npm run build` finished, run
-
-```
-yarn serve
+```bash
+yarn lint
+yarn test
 ```
 
-If you prefer using `now`, just modify `now.json` config.
+## License
 
-## Structure overview
-```
-├── README.md
-├── next.config.js
-├── package.json
-├── pages
-│   ├── _app.js
-│   ├── _document.js
-│   ├── about.js
-│   └── index.js
-├── routes.js
-├── server
-│   └── index.js
-├── src
-│   ├── actions
-│   │   └── repos.js
-│   ├── components
-│   │   └── SearchResults.js
-│   ├── config.js
-│   ├── containers
-│   │   └── SearchRepoContainer.js
-│   ├── libs
-│   │   └── github.js
-│   ├── reducers
-│   │   ├── index.js
-│   │   └── repos.js
-│   ├── store
-│   │   └── createStore.js
-│   └── test
-│       ├── components
-│       │   └── SearchResults.test.js
-│       └── test-utils.js
-└── yarn.lock
-```
+See [LICENSE](LICENSE) file.
