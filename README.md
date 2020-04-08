@@ -63,11 +63,13 @@ You have to implement an abstracted and simple library system.
 
 ## Procedure
 
-1. Get the code. It should be provided to you by the persons leading the interview.
+1. Clone the repo.
 
 2. Open in your favorite IDE.
 
 3. Prepare a solution.
+
+4. Let Commercial People know when you are done with your solution
 
 ## FAQ
 
