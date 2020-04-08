@@ -69,7 +69,7 @@ You have to implement an abstracted and simple library system.
 
 3. Prepare a solution.
 
-4. Let Commercial People know when you are done with your solution
+4. Let Commercial People know when you are done with your solution.
 
 ## FAQ
 
