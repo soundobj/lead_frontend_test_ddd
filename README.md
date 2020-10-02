@@ -34,7 +34,6 @@ You have to implement an abstracted and simple library system.
 ## Tasks
 
 * [Main tasks](#main-tasks)
-* [Optional tasks](#optional-tasks)
 
 ### Main tasks
 
@@ -51,15 +50,12 @@ You have to implement an abstracted and simple library system.
 5. Print out all books and magazines with all their details sorted by `title`.
    This sort should be done for books and magazines together.
 
-### Optional tasks
+6. Implement a view for direct path access for each ISBN and link then to the search results.
 
-> **Hint:** Optional means optional.
+7. Add a book and a magazine to the data structure of your software and export it to a new CSV files.
 
-1. Write Unit tests for one or more methods.
+8. Write Unit tests for one or more methods. As this is a test for a lead level position we are expecting good test coverage here as you will be advocate for this and understand the importance of high test coverage in your applications.
 
-2. Implement a view for direct path access for each ISBN and link then to the search results.
-
-3. Add a book and a magazine to the data structure of your software and export it to a new CSV files.
 
 ## Procedure
 
@@ -95,3 +91,9 @@ yarn test
 ## License
 
 See [LICENSE](LICENSE) file.
+
+## How Your Code Will Be Reviewed
+
+Your code will be reviewed by other JavaScript Leads at Commercial/Residential People and may also be reviewed by other more junior JavaScript Engineers who you will lead if you are successful in your application for this role.
+
+As such, you should aim to impress and do things to the best possible standards as you will be expected to lead by example if you join. You should strive for the best possible standards in the frontend domain as you will be mentoring and developing the skills and standards of more junior Engineers so it is vital that you are highly respected by your peers.   
