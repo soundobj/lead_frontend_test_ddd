@@ -15,7 +15,7 @@ class SearchRepoContainer extends Component {
 
   componentDidMount () {
     const { getTopRepos } = this.props
-    getTopRepos({ lang: 'ruby' })
+    getTopRepos({ lang: 'js' })
   }
 
   render () {
